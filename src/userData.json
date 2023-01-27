@@ -1,0 +1,49 @@
+[{
+		"id": 1,
+		"name": "John",
+		"email": "abc@abc.com",
+		"img": "path",
+		"active": 1,
+		"shipping": "std"
+	},
+	{
+		"id": 2,
+		"name": "Susane",
+		"email": "dce@abc.com",
+		"img": "path",
+		"active": 0,
+		"shipping": [
+			"std",
+			"exp"
+		]
+	},
+	{
+		"id": 3,
+		"name": "Luke",
+		"email": "fbx@abc.com",
+		"img": "path",
+		"active": 1,
+		"shipping": [
+			"std",
+			"exp"
+		]
+	},
+	{
+		"id": 4,
+		"name": "Namcy",
+		"email": "zoo@abc.com",
+		"img": "path",
+		"active": 1,
+		"shipping": "std"
+	},
+	{
+		"id": 5,
+		"name": "Joe",
+		"email": "tra@abc.com",
+		"img": "path",
+		"active": 0,
+		"shipping": [
+			"std",
+			"exp"
+		]
+	}]

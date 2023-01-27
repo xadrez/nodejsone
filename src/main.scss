@@ -1,0 +1,134 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #ff6341;
+$drogo : #f1faee;
+$rocita: rgb(123,56,67);
+$c1: #a8dadc;
+$c2: #457b9d;
+$c3: #1d3557;
+$c4: #345671;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 100% $font-stack;
+  background-color: $drogo;
+  color: $c3;
+}
+.wrapper1{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 75%);
+  justify-content: center;
+  background-color: $c3;
+}
+.wrapper2{
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 75%);
+  justify-content: center;
+}
+.inWrap{
+  padding: 15px;
+  margin-bottom: 20px;
+  //border: 1px solid black;
+}
+.navbar{
+  background-color: $c3;
+  color: $drogo;
+  display: flex;
+  width: 100% ;
+  padding: 15px 15px 0 15px;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+  }
+  .logo{
+    cursor: pointer;
+  }
+  .paymt{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 10px;
+    //border: 1px solid white;
+
+  }
+  .cart{
+    color: $drogo;
+    display: flex;
+    padding:  5px 12px 5px 0px;
+    margin-left: 1px;
+    border-right: 2px solid white;
+    cursor: pointer;
+  }
+  .qty{
+    //background-color: red;
+    //border-radius: 3px;
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    top: -20px;
+    right: -10px;
+  }
+  .wallet{
+    //margin-left: 10px;
+    cursor: pointer;
+  }
+  .btn-primary{
+    background-color: $c4;
+  }
+  .men1{
+    display: flex;
+    justify-content: space-between;
+    //border: 2px solid red;
+    grid-template-columns: repeat(1, 75%);
+      .navtb{
+        width: 200px;
+        padding: 5px;
+        text-align: center;
+        //background-color: burlywood;
+          a{
+            text-decoration: none;
+            color: $drogo;
+            font-weight: normal;
+            cursor: pointer;
+          }
+          a:hover{
+            font-weight: bold;
+            color: yellow;
+          }
+      }
+
+  }
+  /*
+  * Signin form
+  */
+  .form-signin{
+    display: grid;
+    grid-template-columns: repeat(1, 40%);
+    justify-content: center;
+  }
+  .form-floating{
+    margin-bottom:5px;
+  }
+
+  .list-wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 75%);
+    justify-content: center;
+    margin-bottom: 15px;
+    border: 2px solid red;
+
+    .card-ticket{
+      margin-bottom: 25px;
+    }
+}

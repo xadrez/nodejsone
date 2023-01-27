@@ -1,0 +1,22 @@
+const express = require('express')
+let data = require('./userData.json')
+
+console.log(data)
+let displayD = () => {
+	return (data.map((x)=>{
+        //Deconstructs x
+        let {id,name,price,desc,img} = x;
+        	return `<h3>${name}</h3>`;
+   
+     }).join(''))
+};
+
+const server = express()
+server.use(express.static("./dist"))
+
+server.get("/",(req,res)=>{
+	res.status(200).send(displayD())
+	end();
+})
+
+server.listen(5000,()=>{console.log('Express server listening at 5000...')})

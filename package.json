@@ -1,0 +1,45 @@
+{
+  "name": "showcase",
+  "version": "1.0.0",
+  "description": "This project combines multiple tools to show my developer ability to combine these tools in a project.",
+  "main": "src/app.js",
+  "scripts": {
+    "runDev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "sass-watch": "sass --no-source-map --watch src/main.scss dist/css/main.css",
+    "nodemon-watch": "nodemon src/app.js",
+    "dev": "npm-run-all --parallel sass-watch nodemon-watch"
+  },
+  "keywords": [
+    "NodeJs",
+    "Javascript",
+    "mysql",
+    "database",
+    "PHP",
+    "HTML",
+    "Bootstrap"
+  ],
+  "author": "Humbs Bamps",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "cjs": "^0.0.11",
+    "deev": "^0.0.2-beta.2",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "stream-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "@webpack-cli/generators": "^3.0.1",
+    "browser-sync": "^2.27.11",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.49",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.57.1",
+    "sass-loader": "^12.6.0"
+  }
+}
